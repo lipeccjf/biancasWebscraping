@@ -1,0 +1,79 @@
+{
+  "id": "a4fdd949-2a80-4650-bed2-d24c39317e0e",
+  "version": "2.0",
+  "name": "bianca",
+  "url": "http://bianca.com",
+  "tests": [{
+    "id": "a95e6c2d-b4ec-44c1-87f2-385db081db49",
+    "name": "biancaWebscraping",
+    "commands": [{
+      "id": "909a48ca-7559-4436-bced-549006643015",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d99c668-862b-4895-94c1-bcfd623a6c03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f4f4776-1a59-49fd-bbf6-0eff8d105a12",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'bianca loves you!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82ed740f-b9aa-4cc6-b526-b14c610e60fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'bianca loves you!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb72a7be-d70d-4989-ba75-1313608eabc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'bianca loves you!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dfb6a95-5e6a-4180-802c-dda6fcbccebb",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'bianca loves you!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cddbd2b6-1dc2-4a8d-a679-f3a64ad1197e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a95e6c2d-b4ec-44c1-87f2-385db081db49"]
+  }],
+  "urls": ["http://bianca.com/"],
+  "plugins": []
+}
